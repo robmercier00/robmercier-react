@@ -1,13 +1,270 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #474141;
+  color: #FFF;
+  padding: 10px 7% 10%;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.4em;
+  font-size: 1em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+header {
+  margin-bottom: 8px;
+}
+header h1 {
+  width: 100%;
+  font-size: 58px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  z-index: 2;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+}
+header h2 {
+  width: 100%;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-transform: uppercase;
+  margin-top: -5px;
+  font-family: 'Arvo', serif;
+}
+.App-header {
+  background-image: url("MuirLandscape.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  filter: blur(6px);
+}
+.App-header-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+}
+.subhead {
+  font-size: 18px;
+  padding-bottom: 1%;
+  margin: 0 auto 10px;
+}
+.media-object {
+  display: block;
+  margin: 0 auto;
+}
+.media-object > div {
+  line-height: 2em;
+  width: 100%;
+  margin: 0 auto;
+}
+.media-objects {
+  color: #609F73;
+  margin-top: 12px;
+  display: inline-flex;
+}
+.media-objects > a, .media-objects > a:visited {
+  margin-top: -2px;
+  text-decoration: none;
+  color: #609F73;
+}
+#imgme {
+  float: right;
+  margin: -167px -140px 7px 0;
+  border-radius: 60px;
+  height: fit-content;
+}
+.social {
+  float: right;
+  display: flex;
+  margin-top: -70px;
+}
+.social a {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#resume {
+  cursor: pointer;
+  float: right;
+  margin: 50px 0 50px -164px;
+  color: #FFFFFF;
+}
+.education, .jobtitle, .subspecs, .misc-jobtitle {
+  font-weight: bold;
+  color: #609F73;
+}
+.education {
+  padding-left: 0;
+}
+.company {
+  margin-left: 6px;
+}
+.company, .dates, .location {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-left: 1px solid #609F73;
+}
+.misc-company, .misc-dates, .misc-location {
+  padding-right: 12px;
+}
+.explist ul, .explist ul ul li {
+  list-style: none;
+  color: #FFF;
+  font-weight: normal;
+}
+.explist ul li {
+  margin-bottom: .75em;
+}
+.misc-explist ul, .misc-explist ul ul li {
+  list-style: none;
+  color: #FFF;
+  font-weight: normal;
+  margin-left: -10px;
+}
+.misc-explist ul li {
+  margin-bottom: .75em;
+}
+.misc-exp-listing {
+  margin-bottom: 12px;
+}
+#miscexp {
+  font-weight: bold;
+  margin: 30px 0;
+  border-bottom: 1px solid #609F73;
+}
+.uml {
+  margin: 15% auto 0;
+  text-align: center;
+}
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.modules {
+  padding: 18px 15px 19px;
+  display: inline-flex;
+  width: 100%;
+}
+footer {
+  display: inline-flexbox;
+}
+#footer-left {
+  padding-left: 2%;
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+}
+#footer-right {
+  float: right;
+  width: 50%;
+  padding-right: 2%;
+  text-align: right;
+  margin-top: -18px;
+}
+#footer-right > span {
+  vertical-align: super;
+}
+#experience {
+  background-color: rgb(41, 37, 37);
+  width: 66%;
+  float: left;
+  box-shadow: 2px 2px 8px #252121;
+}
+#expertise, #education, #skills, #misc-experience {
+  width: 30%;
+  float: right;
+  background-color: rgb(41, 37, 37);
+  box-shadow: 2px 2px 8px #252121;
+}
+#education, #skills, #misc-experience {
+  margin-top: .8%;
+}
+#show-additional {
+  margin-top: 0;
+  cursor: pointer;
+}
+#extra-experience {
+  display: none;
+}
+.modules-left {
+  padding-right: 15px;
+  margin-top: 5%;
+  float: left;
+  font-size: 1.80em;
+  line-height: 1.2;
+  color: #609F73;
+  text-align: right;
+}
+#misc-experience .modules-left {
+  margin-left: -40px;
+}
+.modules-right {
+  padding-left: 45px;
+  float: left;
+  width: 78%;
+  font-size: 1.30em;
+  text-align: left;
+  transition: opacity 0.8s ease-in-out;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  opacity: 1;
+  max-height: 100%;
+  border-left: 1px solid #d4d4d4;
+}
+.modules-right.hidden {
+  transition: opacity 0.8s ease-in-out;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  opacity: 0;
+  max-height: 0;
+}
+.tech {
+  margin-bottom: 3px;
+}
+.contactme {
+  display: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*
+  React logo props
+*/
+.App-logo {
+  height: 2vmin;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
